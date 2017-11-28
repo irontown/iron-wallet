@@ -1,7 +1,7 @@
-Documentation
-=============
+Iron Wallet Documentation
+=========================
 
-_yay_
+<!-- _yay_ -->
 
 [back](../)
 <!-- [back](./) -->
