@@ -1,4 +1,3 @@
-# This file is a template, and might need editing before it works on your project.
 FROM node:7.9
 
 WORKDIR /usr/src/app
@@ -11,5 +10,4 @@ COPY . /usr/src/app
 
 CMD [ "npm", "start" ]
 
-# replace this with your application's default port
-EXPOSE 8888
+EXPOSE 80

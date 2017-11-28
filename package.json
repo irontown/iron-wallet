@@ -1,7 +1,7 @@
 {
-  "name": "cryptotron",
-  "version": "0.0.1",
-  "description": "Cryptotron ==========",
+  "name": "iron-wallet",
+  "version": "1.0.0",
+  "description": "Iron Wallet ==========",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cryptotron-team/cryptotron.git"
+    "url": "git+https://github.com/irontown/iron-wallet.git"
   },
-  "author": "",
+  "author": "Aaron Krieshok",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cryptotron-team/cryptotron/issues"
+    "url": "https://github.com/irontown/iron-wallet/issues"
   },
-  "homepage": "https://github.com/cryptotron-team/cryptotron#readme"
+  "homepage": "https://github.com/irontown/iron-wallet#readme"
 }
