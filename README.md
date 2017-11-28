@@ -2,45 +2,16 @@ Iron Wallet
 ===========
 
 ![Iron Wallet](./docs/media/images/iron-coin-logo.png "Iron Wallet")
-<!-- ![Iron Wallet](https://pbs.twimg.com/media/CjUjPVgVAAA60Pv.jpg "Waves Lite Client Screen") -->
 
-- [Website](https://cryptotron-core.github.io/cryptotron)
-- [Wiki](https://github.com/cryptotron-core/cryptotron/wiki)
-
-
-
-
-
-
-# boiler
-A boilerplate open source project.
-
-- [Website](https://aronanda.github.io/boiler)
-- [Documentation](https://aronanda.github.io/boiler/docs)
-- [Wiki](https://github.com/aronanda/boiler/wiki)
-- Contribute
-  + [Code of Conduct](./.github/CODE_OF_CONDUCT.md)
-  + [Contribution Guide](./.github/CONTRIBUTING.md)
-  + [Issue Template](./.github/ISSUE_TEMPLATE.md)
-  + [Pull Request Template](./.github/PULL_REQUEST_TEMPLATE.md)
-
-### Useful Links
-
-- [Open Source Guide](https://opensource.guide/starting-a-project)
-
-
-
-
-
+- [Website](https://irontown.github.io/iron-wallet)
+- [Wiki](https://github.com/irontown/iron-wallet/wiki)
 
 # Client
 
-![Alt text](https://pbs.twimg.com/media/CjUjPVgVAAA60Pv.jpg "Waves Lite Client Screen")
-
 Ever wanted to access your crypto funds quickly but had to wait for hours while the blockchain downloads first?
-The Waves Lite Client connects to public Waves nodes to retrieve up-to-date blockchain information.
+The Iron Client connects to public Iron nodes to retrieve up-to-date blockchain information.
 
-We provide all the cryptographic tools required to create addresses, sign and verify transactions for the Waves blockchain.
+We provide all the cryptographic tools required to create addresses, sign and verify transactions for the Iron blockchain.
 The Lite Client reads all the data from the public nodes, creates the transaction directly in the browser,
 and simply broadcasts it in a finished state.
 
@@ -48,7 +19,6 @@ and simply broadcasts it in a finished state.
 
 During registration, the most important piece of information is the wallet SEED. Save it somewhere safe:
 write it down on a piece of paper, or store it in different media.
-
 
 Using the SEED you can always import your account again or change your password. The SEED will be AES-encrypted
 with a password of your choice, which you can enter to access your account at the log-in screen.
@@ -74,7 +44,7 @@ Since you have your environment set up you can clone the repository and run in t
 ```
 npm install
 ```
-Since we are reorganizing the building process, there is something more you need to have a fully working Waves Client:
+Since we are reorganizing the building process, there is something more you need to have a fully working Iron Client:
 ```
 npm install -g grunt
 npm install grunt
@@ -86,7 +56,7 @@ Those commands will prepare all required dependencies. Now feel free to open src
 
 ## Downloadable distributions
 
-Here in the [Releases page](https://github.com/wavesplatform/WavesGUI/releases) you can find all Lite Client packages available for download.
+Here in the [Releases page](https://github.com/wavesplatform/IronGUI/releases) you can find all Lite Client packages available for download.
 For mainnet Client please download *waves-lite-client-mainnet-vx.y.z.zip*.
 For testnet use *waves-lite-client-testnet-vx.y.z.zip*.
 
@@ -105,12 +75,12 @@ Otherwise, the path to the index.html will change and you won’t be able to see
 
 Our Client has also a standalone version available in the [Chrome Web Store](https://chrome.google.com/webstore/detail/wavesliteapp/kfmcaklajknfekomaflnhkjjkcjabogm).
 This is an application for the Chrome web browser and it is available for mainnet only.
-The Chrome plugin has one major benefit: all accounts registered on one device are automatically available on your other devices on which the Waves Lite Client extension is installed.
+The Chrome plugin has one major benefit: all accounts registered on one device are automatically available on your other devices on which the Iron Client extension is installed.
 This feature requires being authorized in Chrome.
 
 ## Online wallets
 
-We provide online-hosted versions of wallets for [testnet](https://testnet.waveswallet.io) and [mainnet](https://waveswallet.io).
+We provide an online-hosted version of the wallet at [IronWallet.org](https://ironwallet.org)
 We do not recommend using online versions of the wallets for mainnet due to security reasons.
 The safest way is to use the Chrome plugin or binaries deployed on Github, because we can work with their administrators to address potential scams.
 
