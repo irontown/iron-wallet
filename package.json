@@ -1,0 +1,22 @@
+{
+  "name": "cryptotron",
+  "version": "0.0.1",
+  "description": "Cryptotron ==========",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptotron-team/cryptotron.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cryptotron-team/cryptotron/issues"
+  },
+  "homepage": "https://github.com/cryptotron-team/cryptotron#readme"
+}
