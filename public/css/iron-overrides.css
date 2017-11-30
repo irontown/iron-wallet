@@ -2,3 +2,7 @@ h1.iron-link a {
   text-decoration: none;
   color: #e8e8e9;
 }
+
+.wallet-cards wallet-box:nth-child(-n+2) {
+  display: none;
+}

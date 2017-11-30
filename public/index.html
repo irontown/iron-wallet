@@ -430,7 +430,7 @@
                 <table>
                   <div class="balanceAmt">
                     <div ng-if="!send.feeAndTransferAssetsAreTheSame"><p>Asset balance: </p><span class="balancewaves">{{send.assetBalance | moneyLong:true}}</span><br/></div>
-                    <p>Iron balance: </p><span class="balancewaves">{{send.feeAssetBalance | moneyLong:true}}</span>
+                    <p>Waves balance: </p><span class="balancewaves">{{send.feeAssetBalance | moneyLong:true}}</span>
                   </div>
                   <thead>
                   <tr>
@@ -586,13 +586,15 @@
           <div class="noDisp" ng-controller="walletDepositController as deposit" data-currency="BTC">
             <div id="deposit-btc-dialog" waves-dialog ok-button-caption="CLOSE" cancel-button-visible="false">
               <h2 class="sectionHeader">DEPOSIT: BTC</h2>
+              <!--
               <p class="dialog-text textCenter">
                 <img src="img/visa_mastercard_116x35.gif" width="116" height="35"><span class="divider-2"></span>
                 <button class="wButton wButton-dialog" ng-click="walletList.depositFromCard(deposit.assetBalance.currency)">
                   Buy BTC from your credit card
                 </button>
               </p>
-              <p class="dialog-text">To deposit BTC to your Iron account, please send BTC to the address below.<br/>
+              -->              
+              <p class="dialog-text">To deposit BTC to your Iron Wallet, please send BTC to the address below.<br/>
                 The minimum amount of deposit is <span class="fontBold">{{::deposit.btc.minimumAmount}} BTC</span>.</p>
               <table class="wavesTable bitcoin-requisites">
                 <tbody>
@@ -601,8 +603,8 @@
                 </tr>
                 </tbody>
               </table>
-              <p class="dialog-text">Enter this address into your Bitcoin client or wallet. Once the transaction is confirmed, <br/>
-                the gateway will process the transfer of BTC to a token in your Iron account.</p>
+              <p class="dialog-text">Enter this address to your Bitcoin client or wallet. Once the transaction is confirmed, <br/>
+                the gateway will process the transfer of BTC to a token in your Iron Wallet.</p>
               <p class="dialog-text">Please note that the gateway doesn't apply any fees for this operation.</p>
               <p class="dialog-text">You can scan this QR-code in order to copy the address.<br/>
                 Amount is optional but it will be added to the QR-code if present.</p>
@@ -626,7 +628,7 @@
                    We do not accept such transactions and can’t refund them.<br/>
                    You will lose that money.</p>
               </div>
-              <p class="dialog-text">To deposit ETH to your Iron account, please send ETH to the address below.<br/>
+              <p class="dialog-text">To deposit ETH to your Iron Wallet, please send ETH to the address below.<br/>
                 The minimum amount of deposit is <span class="fontBold">{{deposit.eth.minimumAmount}} ETH</span>.</p>
               <p class="dialog-text">Please do not deposit ERC20 tokens! Only Ethereum is allowed.</p>
               <table class="wavesTable bitcoin-requisites">
@@ -636,8 +638,8 @@
                 </tr>
                 </tbody>
               </table>
-              <p class="dialog-text">Enter this address into your Ethereum client or wallet. Once the transaction is confirmed, <br/>
-                the gateway will process the transfer of ETH to a token in your Iron account.</p>
+              <p class="dialog-text">Enter this address to your Ethereum client or wallet. Once the transaction is confirmed, <br/>
+                the gateway will process the transfer of ETH to a token in your Iron Wallet.</p>
               <p class="dialog-text">Please note that the gateway doesn't apply any fees for this operation.</p>
               <div class="textCenter">
                 <waves-qr-code class="center" size="180" value="deposit.eth.ethereumAddress"></waves-qr-code>
@@ -648,7 +650,7 @@
           <div class="noDisp" ng-controller="walletDepositController as deposit" data-currency="LTC">
             <div id="deposit-ltc-dialog" waves-dialog ok-button-caption="CLOSE" cancel-button-visible="false">
               <h2 class="sectionHeader">DEPOSIT: LTC</h2>
-              <p class="dialog-text">To deposit LTC to your Iron account, please send LTC to the address below.<br/>
+              <p class="dialog-text">To deposit LTC to your Iron Wallet, please send LTC to the address below.<br/>
                 The minimum amount of deposit is <span class="fontBold">{{deposit.ltc.minimumAmount}} LTC</span>.</p>
               <table class="wavesTable bitcoin-requisites">
                 <tbody>
@@ -657,8 +659,8 @@
                 </tr>
                 </tbody>
               </table>
-              <p class="dialog-text">Enter this address into your Litecoin client or wallet. Once the transaction is confirmed, <br/>
-                the gateway will process the transfer of LTC to a token in your Iron account.</p>
+              <p class="dialog-text">Enter this address to your Litecoin client or wallet. Once the transaction is confirmed, <br/>
+                the gateway will process the transfer of LTC to a token in your Iron Wallet.</p>
               <p class="dialog-text">Please note that the gateway doesn't apply any fees for this operation.</p>
               <div class="textCenter">
                 <waves-qr-code class="center" size="180" value="deposit.ltc.litecoinAddress"></waves-qr-code>
@@ -669,7 +671,7 @@
           <div class="noDisp" ng-controller="walletDepositController as deposit" data-currency="ZEC">
             <div id="deposit-zec-dialog" waves-dialog ok-button-caption="CLOSE" cancel-button-visible="false">
               <h2 class="sectionHeader">DEPOSIT: ZEC</h2>
-              <p class="dialog-text">To deposit Zcash to your Iron account, please send Zcash to the address below.<br/>
+              <p class="dialog-text">To deposit Zcash to your Iron Wallet, please send Zcash to the address below.<br/>
                 The minimum amount of deposit is <span class="fontBold">{{deposit.zec.minimumAmount}} ZEC</span>.</p>
               <table class="wavesTable bitcoin-requisites">
                 <tbody>
@@ -678,8 +680,8 @@
                 </tr>
                 </tbody>
               </table>
-              <p class="dialog-text">Enter this address into your Zcash client or wallet. Once the transaction is confirmed, <br/>
-                the gateway will process the transfer of Zcash to a token in your Iron account.</p>
+              <p class="dialog-text">Enter this address to your Zcash client or wallet. Once the transaction is confirmed, <br/>
+                the gateway will process the transfer of Zcash to a token in your Iron Wallet.</p>
               <p class="dialog-text">Please note that the gateway doesn't apply any fees for this operation.</p>
               <div class="textCenter">
                 <waves-qr-code class="center" size="180" value="deposit.zec.zcashAddress"></waves-qr-code>
@@ -759,7 +761,14 @@
           </div>
 
           <div class="noDisp" ng-controller="cardDepositController as card">
-            <div id="card-deposit-dialog" waves-dialog ok-button-caption="BUY" on-dialog-ok="card.redirectToMerchant(card.form)">
+            <!-- <div id="card-deposit-dialog" waves-dialog ok-button-caption="BUY" on-dialog-ok="card.redirectToMerchant(card.form)"> -->
+            <div id="card-deposit-dialog" waves-dialog ok-button-caption="CLOSE" cancel-button-visible="false">
+
+              <h2 class="sectionHeader">DEPOSIT: WAVES</h2>
+              <H3>{{::menu.address}}</H3>
+              <p class="dialog-text">To deposit Waves to your Iron Wallet, click on the address at the top to copy it to your clipboard.<br/></p>
+
+              <!--
               <h2 class="sectionHeader">DEPOSIT FROM CARD: <b>{{card.crypto.shortName}}</b></h2>
               <p class="textCenter">Please note: the minimum amount you can pay is <b>{{card.limits.min | number:0}} {{card.payCurrency.displayName}}</b>,<br/>
                 the maximum is <b>{{card.limits.max | number:0}} {{card.payCurrency.displayName}}</b></p>
@@ -788,10 +797,10 @@
               <div class="textCenter">
                 <p>For making a payment from your card you will be redirected <br/> to the merchant's website.</p>
               </div>
+              -->
             </div>
           </div>
-
-          <div class="flex-container">
+          <div class="wallet-cards flex-container">
             <wallet-box class="walletBox"
                         ng-repeat="w in walletList.wallets"
                         balance="w.balance"
