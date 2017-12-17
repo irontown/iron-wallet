@@ -440,7 +440,7 @@
                   </thead>
                   <tbody>
                   <tr>
-                    <td>Recipient's Address</td>
+                    <td>Recipient's Address (Waves)</td>
                     <td>
                       <div class="form-field">
                         <input class="wInput form-control" name="sendRecipient" type="text" placeholder="Recipient" ng-model="send.recipient" />
@@ -464,7 +464,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>Fee</td>
+                    <td>Waves Fee</td>
                     <td>
                       <md-autocomplete md-input-name="sendFee" md-selected-item="send.autocomplete.selectedFee" md-search-text="send.autocomplete.searchText"
                                        md-items="item in send.autocomplete.querySearch(send.autocomplete.searchText)"
@@ -841,7 +841,9 @@
                 <td>{{tx.balance | moneyShort}}</td>
                 <td>
                   <button class="wButton wButton-neg fade" ng-click="assetList.assetTransfer(tx.id)">TRANSFER</button><span class="divider-2"></span>
+                  <!--
                   <button class="wButton wButton-neg fade" ng-disabled="!tx.formatted.canReissue" ng-click="assetList.assetReissue(tx.id)">REISSUE</button><span class="divider-2"></span>
+                  -->
                   <button class="wButton wButton-neg fade" ng-click="assetList.assetDetails(tx.id)">DETAILS</button><span class="divider-2"></span>
                   <!-- TODO: remove MASS PAY feature or re-engineer it using a centralized service
                   <button class="wButton wButton-neg fade" ng-click="assetList.assetMassPay(tx.id)">MASS PAY</button>
@@ -901,7 +903,7 @@
                   <h2 class="sectionHeader">ASSET TRANSFER</h2>
                   <div class="balanceAmt">
                     <p>Asset balance: </p><span class="balancewaves">{{transfer.availableBalance | moneyLong:true}}</span><br/>
-                    <p>Iron balance: </p><span class="balancewaves">{{transfer.feeAssetBalance | moneyLong:true}}</span>
+                    <p>Waves balance: </p><span class="balancewaves">{{transfer.feeAssetBalance | moneyLong:true}}</span>
                   </div>
                   <table class="wavesTable">
                     <thead>
