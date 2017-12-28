@@ -6,3 +6,24 @@ h1.iron-link a {
 .wallet-cards wallet-box:nth-child(-n+2) {
   display: none;
 }
+
+span #wavesAccountAddressQr {
+  margin-left: 20px;
+  padding-left: 10px;
+  cursor: pointer;
+  color: #fff;
+  padding: 4px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 800px) {
+  #version {
+    display: block !important;
+    font-size: 0.7em
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #version {
+    font-size: 0.7em
+  }
+}
